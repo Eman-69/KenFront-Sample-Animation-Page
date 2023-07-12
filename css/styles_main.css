@@ -1,9 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 .cover{
-    position: absolute;
+    position: relative;
     width: 100vw;
     height: 100vh;
     background-color: white;
@@ -13,4 +14,41 @@
 .cover > img{
     position: relative;
     top: 43%;
+}
+
+.navbar{
+    position: fixed;
+    margin: 3vw 5vw;
+    width: 90vw;
+    height: 10vh;
+    z-index: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5vh;
+    background-color: rgba(0, 0, 0, 0.483);
+}
+.navbar > img
+{
+    margin-left: 3vw;
+    height: 6vh;
+}
+.navbar > div
+{
+    margin-right: 3vw;
+}
+
+
+.page1 
+{
+    background: url("../img/page1dots.png"),linear-gradient(to bottom right,#4129F4,#2E6BFE,#0f0f0f),url("../img/page1bottomleft.png"),url("../img/page1topright.png");
+    background-position:bottom,center,0% 0%,100% 0%;
+    background-repeat: repeat-x,no-repeat,no-repeat,no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+.page1-title{
+    font-size: 5em;
+    text-align: center;
+    padding-top: 40vh;
 }
