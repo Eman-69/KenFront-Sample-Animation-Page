@@ -20,12 +20,12 @@
     position: fixed;
     margin: 3vw 5vw;
     width: 90vw;
-    height: 10vh;
+    height: 13vh;
     z-index: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 5vh;
+    border-radius: 50px;
     background-color: rgba(0, 0, 0, 0.483);
 }
 .navbar > img
@@ -37,18 +37,51 @@
 {
     margin-right: 3vw;
 }
+a,.contact{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    font-size: 1rem;
+    margin: 0 20px 0 20px;
+}
 
+.contact{
+    background-color: rgba(0, 0, 0, 0);
+    height: 40px ;
+    width: 100px;
+    border-radius: 30px;
+    border-style: none;
+    border: 1px solid white;
+}
 
+.arrow-down{
+    color: white;
+    font-size: 13px;
+    margin:5px 0 0 5px;
+}
 .page1 
 {
-    background: url("../img/page1dots.png"),linear-gradient(to bottom right,#4129F4,#2E6BFE,#0f0f0f),url("../img/page1bottomleft.png"),url("../img/page1topright.png");
+    background:url("../img/page1dots.png"),linear-gradient(to bottom right,#4129F4,#2E6BFE,#0f0f0f),
+        url("../img/page1bottomleft.png"),
+        url("../img/page1topright.png");
     background-position:bottom,center,0% 0%,100% 0%;
     background-repeat: repeat-x,no-repeat,no-repeat,no-repeat;
     width: 100vw;
     height: 100vh;
-}
-.page1-title{
-    font-size: 5em;
     text-align: center;
-    padding-top: 40vh;
 }
+h1{
+    font-size: 3em;
+    padding-top: 40vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-weight: 500;
+    color: white;
+}
+
+.downarrow{
+    position: relative;
+    top:10vh;
+}
+
