@@ -64,10 +64,10 @@ a,.contact{
     width: 100vw;
     height: 100vh;
     text-align: center;
+    margin-top: 40vh;
 }
 h1{
     font-size: 5rem;
-    padding-top: 40vh;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-weight: 500;
@@ -87,4 +87,30 @@ h1{
     width: 100vw;
     background-color: green;
     text-align: center;
+}
+
+.page3 {
+    background: url("../img/page1dots.png"), linear-gradient(to bottom, #4129F4, #2E6BFE, #0f0f0f);
+        background-position: bottom, center, 0% 0%, 100% 0%;
+            background-repeat: repeat-x, no-repeat, no-repeat, no-repeat;
+        background-size: 100%;
+    width: 100vw;
+    height: 100vh;
+}
+
+.page3-title {
+    margin-bottom: 5vh;
+    margin-top: 25vh;
+    margin-left: 10vh ;
+}
+
+p{
+    font-size: 2.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: azure;
+        line-height: 1.5;
+}
+.page3-para{
+    margin-left: 10vh;
 }
