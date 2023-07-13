@@ -4,7 +4,7 @@
     overflow-x: hidden;
 }
 body{
-    background: url("../img/page1dots.png"), linear-gradient(to bottom right, #4129F4, #2E6BFE, #0f0f0f);
+    background: /*url("../img/page1dots.png"), */linear-gradient(to bottom, #4129F4, #2E6BFE, #0f0f0f);
         background-position: bottom, center, 0% 0%, 100% 0%;
         background-repeat: repeat-x, no-repeat, no-repeat, no-repeat;
 }
