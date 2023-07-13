@@ -8,6 +8,9 @@ body{
         background-position: bottom, center, 0% 0%, 100% 0%;
         background-repeat: repeat-x, no-repeat, no-repeat, no-repeat;
 }
+
+
+
 section{
     scroll-snap-align: start;
 }
