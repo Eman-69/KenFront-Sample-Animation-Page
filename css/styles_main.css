@@ -3,6 +3,16 @@
     padding: 0;
     overflow-x: hidden;
 }
+
+section{
+    scroll-snap-align: start;
+}
+
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
 .cover{
     position: relative;
     width: 100vw;
@@ -56,9 +66,7 @@ a,.contact{
 }
 .page1 
 {
-    background:url("../img/page1dots.png"),linear-gradient(to bottom right,#4129F4,#2E6BFE,#0f0f0f),
-        url("../img/page1bottomleft.png"),
-        url("../img/page1topright.png");
+    background:url("../img/page1dots.png"),linear-gradient(to bottom right,#4129F4,#2E6BFE,#0f0f0f);
     background-position:bottom,center,0% 0%,100% 0%;
     background-repeat: repeat-x,no-repeat,no-repeat,no-repeat;
     width: 100vw;
