@@ -246,5 +246,10 @@ p{
       .page3-texts{
         width: 50%;
       }
-
+      .para{
+        font-size: 1rem;
+      }
+      .improve{
+        font-size: 2.4rem;
+      }
 }
