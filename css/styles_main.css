@@ -130,7 +130,7 @@ h1{
 }
 .page1-title{
     
-    margin-top: 40vh;
+    margin-top: 50vh;
 }
 .downarrow{
     height: 25vh;
@@ -138,12 +138,15 @@ h1{
 }
 .page1ellipse
 {
-    height: 70%;
+    max-height: 200vh;
 }
-.page1ellipse > img{
+.page1ellipse > svg{
     position: absolute;
-    bottom: 0;
+    bottom: -28vh;
+    left: 17vw;
+    height: 120vh;
 }
+
 /* .first-white,.second-white{
     position: absolute;
     border: 3px solid black;
@@ -161,7 +164,8 @@ background-size: 100%;
     text-align: center;
     width: 100vw;
     height: 100vh;
-    /* overflow: hidden; */
+    overflow: hidden;
+    position: relative;
 }
 .page2-title{
     margin-top: 22vh;
@@ -185,16 +189,37 @@ p{
     font-size: 2rem;
     color: white;
 }
+.page2ellipse
+{
+    max-height: 300vh;
+}
+.page2ellipse > svg{
+    position: absolute;
+    top: -90vh;
+    left: -2vw;
+    height: 180vh;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes svg2ani
+{
+    0% {
+        height:100vh; top:50vh; left: 26vw;
+    }
+    100% {height:180vh; top:-90vh}
+}
 .page3 {
     width: 100vw;
     height: 100vh;
+    position: relative;
     /* overflow: hidden; */
 } 
 .graph{
-    float: right;
-    width: 45%;
+    position: absolute;
+    right: 0;
+    width: 55%;
     height: 100%;
-    display: inline-block;
+    
 }
 
 .page3-texts{
@@ -203,14 +228,43 @@ p{
 }
 .page3-title {
     margin-bottom: 5vh;
-    margin-top: 25vh;
+    margin-top: 20vh;
     margin-left: 10vh ;
 }
 
 .page3-para{
     margin-left: 10vh;
 }
-
+.page3ellipse
+{
+    max-height: 300vh;
+}
+.page3ellipse > svg{
+    position: absolute;
+    top: 34.5vh;
+    left: 80.5vw;
+    height: 20vh;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+}
+@keyframes svg3ani {
+    0% {top: -90vh;
+        left: -2vw;
+        height: 180vh;}
+    100%{    top: 34.5vh;
+        left: 80.5vw;
+        height: 20vh;}
+    
+}
+@keyframes imglani4
+{
+    0% {height: 100vh}
+    100% {height: 150vh; left: -70vw;}
+}
+@keyframes imgrani2 {
+    0% {height: 80vh;}
+    100% {height: 100vh;}
+}
 .page4{
     width: 100vw;
         height: 100vh;
@@ -246,5 +300,32 @@ p{
       .page3-texts{
         width: 50%;
       }
+      .para{
+        font-size: 1rem;
+      }
+      .improve{
+        font-size: 2.4rem;
+      }
+}
 
+@media only screen and (max-width:1919px) {
+a, .contact {
+        font-size: 1.2rem;
+    }
+    .contact{
+        width: 8vw;
+    }
+        .navbar>img {
+            margin-left: 3vw;
+            height: 7vh;
+        }
+        .para {
+            font-size: 1.3rem;
+        }
+        .improve {
+            font-size: 2.5rem;
+        }
+    p {
+        font-size: 1.3rem;
+    }
 }

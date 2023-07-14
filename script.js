@@ -7,6 +7,8 @@ function animat1()
         x.style.animationName="imgrani1";
         x.style.height="80vh";  
         console.log("page1");
+        /*const svg=document.getElementById("eI3TEKXL1DN1");
+        svg.style.display="block";*/
         i++;
         //toggleScroll("page1");
     }
@@ -22,12 +24,33 @@ function animat2()
     y.style.animationName="imglani3";
     y.style.opacity="1";
     y.style.height="100vh";
+    const svg2=document.querySelectorAll("svg")[1];
+    svg2.style.animationName="svg2ani";
     console.log("page2");
     i++;
     //toggleScroll("page2");
     }
 }
-if(i==2)
+function animat3(x)
+{
+    if(i==2)
+    {
+        const x=document.getElementById("imgr");
+        x.style.animationName="imgrani2";
+        x.style.height="100vh";  
+        const y=document.getElementById("imgtl");
+        y.style.animationName="imglani4";
+        y.style.height="150vh";
+        y.style.left="-70vw";
+        const svg3=document.querySelectorAll("svg")[2];
+        svg3.style.animationName="svg3ani";
+        console.log("page3");
+        i++;
+    //toggleScroll("page2");
+    }
+}
+
+if(i==3)
     console.log("end of animation");
 
 
