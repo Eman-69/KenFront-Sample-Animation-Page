@@ -161,6 +161,7 @@ background-size: 100%;
     text-align: center;
     width: 100vw;
     height: 100vh;
+    /* overflow: hidden; */
 }
 .page2-title{
     margin-top: 22vh;
@@ -183,63 +184,20 @@ p{
     margin-top: 0 ;
     font-size: 2rem;
 }
-.page3 {/*
-    background: url("../img/page1dots.png"), linear-gradient(to bottom, #4129F4, #2E6BFE, #0f0f0f);
-        background-position: bottom, center, 0% 0%, 100% 0%;
-            background-repeat: repeat-x, no-repeat, no-repeat, no-repeat;
-        background-size: 100%;*/
-        background-image: url("../img/page3_images/graph.png");
-        background-position: right;
-        background-repeat: no-repeat;
-        background-size: contain;
+.page3 {
     width: 100vw;
     height: 100vh;
-
+    /* overflow: hidden; */
 } 
-.page3 > img{
-    position: absolute;
-    
-    
+.graph{
+    float: right;
+    width: 45%;
+    height: 100%;
+    display: inline-block;
 }
-.squiggly-line,.squiggly-shadow{
-    top: 30vh;
-    width: 41.5%;
-    right: 0;
-}
-.blue-circle{
-    width:2%;
-    right: 9.6vw ;
-    top:41vh;
-}
-.straight-shadow1{
-    height: 100vh;
-    top:0;
-    right: 0;
-}
-.straight-shadow2 {
-    height: 100vh;
-    top: 0;
-    right:7.5vw ;
-}
-.straight-shadow3 {
-    height: 100vh;
-    top: 0;
-    right: 15vw ;
-}
-.straight-shadow4 {
-    height: 100vh;
-    top: 0;
-    right: 22.5vw ;
-}
-.straight-shadow5 {
-    height: 100vh;
-    top: 0;
-    right: 30vw ;
-}
-.straight-shadow6 {
-    height: 100vh;
-    top: 0;
-    right: 37.5vw ;
+
+.page3-texts{
+    display: inline-block;
 }
 .page3-title {
     margin-bottom: 5vh;
@@ -255,6 +213,7 @@ p{
     width: 100vw;
         height: 100vh;
         position: relative;
+        /* overflow: hidden; */
 }
 .question{
     position: absolute;
@@ -262,4 +221,8 @@ p{
     right:15vw;
     height: 45%;
     width: 23%;
+}
+
+@media(min-width:1920) and (max-width:2559){
+
 }
