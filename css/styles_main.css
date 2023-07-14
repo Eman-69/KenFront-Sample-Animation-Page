@@ -118,6 +118,8 @@ a,.contact{
     text-align: center;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 h1{
     font-size: 5rem;
@@ -134,7 +136,14 @@ h1{
     height: 25vh;
     width:15vw;
 }
-
+.page1ellipse
+{
+    height: 70%;
+}
+.page1ellipse > img{
+    position: absolute;
+    bottom: 0;
+}
 /* .first-white,.second-white{
     position: absolute;
     border: 3px solid black;
@@ -179,6 +188,10 @@ p{
         background-position: bottom, center, 0% 0%, 100% 0%;
             background-repeat: repeat-x, no-repeat, no-repeat, no-repeat;
         background-size: 100%;*/
+        background-image: url("../img/page3_images/graph.png");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
     width: 100vw;
     height: 100vh;
 
