@@ -4,21 +4,64 @@
     overflow-x: hidden;
 }
 body{
-    background: /*url("../img/page1dots.png"), */linear-gradient(to bottom, #4129F4, #2E6BFE, #0f0f0f);
+    background: /*url("../img/page1dots.png"), */linear-gradient(to bottom, #4129F4, #0f0f0f);
         background-position: bottom, center, 0% 0%, 100% 0%;
         background-repeat: repeat-x, no-repeat, no-repeat, no-repeat;
+        width: 100vw;
+        overflow: hidden;
+}
+.imgr{
+    position: absolute;
+    overflow: hidden;
+    left: 60vw;
+    top: 0vh;
+    z-index: -1;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+}
+@keyframes imgrani1 {
+    0% {height: 180vh;}
+    100% {height: 80vh;}    
 }
 
-
-
+.imgl{
+    
+    position: absolute;
+    z-index: -1;
+    left: -20vw;
+    bottom: 0vh;
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+    overflow: hidden;
+}
+.imgtl
+{
+    position: absolute;
+    z-index: -1;
+    left: -20vw;
+    top: 0vh;
+    animation-timing-function: ease-out;
+    animation-duration: 1.5s;
+    opacity: 0;
+}
+@keyframes imglani2 {
+    0% {height: 50vh; opacity: 1;}
+    100% {height: 0vh; opacity: 0; display: none;}    
+}
+@keyframes imglani3 {
+    0% {height: 50vh;opacity: 0;}
+    100% {height: 100vh;opacity: 1;}
+}
 section{
     scroll-snap-align: start;
 }
-
 .container{
+    position: relative;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
+    overflow-x: hidden;
+    
 }
 .cover{
     position: relative;
@@ -89,9 +132,8 @@ h1{
     margin-top: 40vh;
 }
 .downarrow{
-    position: relative;
-    top:10vh;
-    height: 5vh;
+    height: 25vh;
+    width:15vw;
 }
 
 /* .first-white,.second-white{
@@ -113,7 +155,7 @@ background-size: 100%;
     height: 100vh;
 }
 .page2-title{
-    margin-top: 20vh;
+    margin-top: 22vh;
 }
 
 p{
@@ -124,8 +166,14 @@ p{
     color: azure;
 }
 .page2 > img{
-    margin-top: 10vh;
-    height: 5vh;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    height: 12vh;
+    width: 7vw;
+}
+.page2-caption {
+    margin-top: 0 ;
+    font-size: 2rem;
 }
 .page3 {/*
     background: url("../img/page1dots.png"), linear-gradient(to bottom, #4129F4, #2E6BFE, #0f0f0f);
@@ -134,21 +182,71 @@ p{
         background-size: 100%;*/
     width: 100vw;
     height: 100vh;
+    position: relative;
 } 
 
+.page3 > img{
+    position: absolute;
+}
+.squiggly-line,.squiggly-shadow{
+    top: 30vh;
+    width: 41.5%;
+    right: 0;
+}
+.blue-circle{
+    width:2%;
+    right: 9.6vw ;
+    top:41vh;
+}
+.straight-shadow1{
+    height: 100vh;
+    top:0;
+    right: 0;
+}
+.straight-shadow2 {
+    height: 100vh;
+    top: 0;
+    right:7.5vw ;
+}
+.straight-shadow3 {
+    height: 100vh;
+    top: 0;
+    right: 15vw ;
+}
+.straight-shadow4 {
+    height: 100vh;
+    top: 0;
+    right: 22.5vw ;
+}
+.straight-shadow5 {
+    height: 100vh;
+    top: 0;
+    right: 30vw ;
+}
+.straight-shadow6 {
+    height: 100vh;
+    top: 0;
+    right: 37.5vw ;
+}
 .page3-title {
     margin-bottom: 5vh;
     margin-top: 25vh;
     margin-left: 10vh ;
 }
 
-p{
-    font-size: 2.5rem;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        color: azure;
-        line-height: 1.5;
-}
 .page3-para{
     margin-left: 10vh;
+}
+
+.page4{
+    width: 100vw;
+        height: 100vh;
+        position: relative;
+}
+.question{
+    position: absolute;
+    top:20vh;
+    right:15vw;
+    height: 45%;
+    width: 23%;
 }
