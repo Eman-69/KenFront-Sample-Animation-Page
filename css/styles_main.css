@@ -253,3 +253,25 @@ p{
         font-size: 2.4rem;
       }
 }
+
+@media only screen and (max-width:1919px) {
+a, .contact {
+        font-size: 1.2rem;
+    }
+    .contact{
+        width: 8vw;
+    }
+        .navbar>img {
+            margin-left: 3vw;
+            height: 7vh;
+        }
+        .para {
+            font-size: 1.3rem;
+        }
+        .improve {
+            font-size: 2.5rem;
+        }
+    p {
+        font-size: 1.3rem;
+    }
+}
