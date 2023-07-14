@@ -31,7 +31,7 @@ function animat2()
     //toggleScroll("page2");
     }
 }
-function animat3(x)
+function animat3()
 {
     if(i==2)
     {
@@ -49,8 +49,35 @@ function animat3(x)
     //toggleScroll("page2");
     }
 }
+function animat4()
+{
+    if(i==3)
+    {
+        const svg3=document.querySelectorAll("svg")[3];
+        svg3.style.animationName="svg4ani";
+        console.log("page4");
+        i++;
+    //toggleScroll("page2");
+    }
+}
+function animat5()
+{
+    if(i==4)
+    {
+        const svg3=document.querySelectorAll("svg")[4];
+        const btn=document.getElementById("downloadbtn");
+        svg3.style.animationName="svg5ani";
+        i++;
+        setTimeout(() => {
+           btn.style.display="block"; 
+           btn.style.animationName="btnani";
+        }, 3000);
+        console.log("page5")
+    //toggleScroll("page2");
+    }
+}
 
-if(i==3)
+if(i==5)
     console.log("end of animation");
 
 
