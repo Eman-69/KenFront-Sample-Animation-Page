@@ -56,7 +56,6 @@ section{
     scroll-snap-align: start;
 }
 .container{
-    position: relative;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
@@ -182,11 +181,12 @@ p{
         background-size: 100%;*/
     width: 100vw;
     height: 100vh;
-    position: relative;
-} 
 
+} 
 .page3 > img{
     position: absolute;
+    
+    
 }
 .squiggly-line,.squiggly-shadow{
     top: 30vh;
