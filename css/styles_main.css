@@ -149,8 +149,7 @@ h1{
     color: white;
 }
 .page1-title{
-    
-    margin-top: 55vh;
+    margin-top: 53vh;
 }
 .downarrow{
     height: 25vh;
@@ -161,7 +160,7 @@ h1{
     max-height: 200vh;
 }
 .page1ellipse > svg{
-    padding-top: 20vh;
+    padding-top: 17vh;
     height: auto;
     width: 100%;
     animation-timing-function: ease-in-out;
@@ -207,7 +206,7 @@ background-size: 100%;
 p{
     margin-top: 5vh;
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
+    line-height: 1.25;
     font-size: 2.5rem;
     color: #DBDFEA;
 }
@@ -246,7 +245,7 @@ p{
     background-image: url("../img/page3_images/graph.png");
     background-position: right;
     background-repeat: no-repeat;
-    background-size:  57% 100%;
+    background-size:  contain;
 } 
 .page3 > div{
     grid-row-start: 1;
@@ -254,6 +253,7 @@ p{
 }
 .page3-texts{
     width: 50%;
+    text-align: left;
 }
 .page3-title {
     margin-bottom: 5vh;
@@ -275,8 +275,8 @@ p{
     animation-timing-function: ease-out;
 }
 @keyframes svg3ani {
-    0% {margin-top: 0;}
-    100%{margin-top: 35vh;}
+    0% {margin-top: 0; transform: scale(10);}
+    100%{margin-top: 35vh;transform: scale(1);}
     
 }
 @keyframes imglani4
@@ -312,14 +312,14 @@ p{
 }
 .page4ellipse > svg{
     width: 50vw;
-    margin-top: -12vh;
+    margin-top: -11vh;
     margin-left: 45vw;
-    animation-timing-function: linear;
+    animation-timing-function: linear ease;
     animation-duration: 0.5s;
 }
 @keyframes svg4ani1 {
-    0% {margin-top: -200vh;}
-    100% {margin-top: -12vh;}    
+    0% {margin-top: -200vh;transform: scale(3);}
+    100% {margin-top: -11vh;transform: scale(1);}    
 }
 @keyframes svg4ani2{
     0% {width: 50vw; margin-top: -12vh;}
@@ -342,7 +342,7 @@ p{
     grid-column-start: 1;
 }
 .page5-svg{
-    margin-top: 53vh;
+
     padding: 5% 0;
 
 }
@@ -351,15 +351,16 @@ p{
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 3s;
+    margin-top: 10vh;
 }
 .page5-img{
     
 }
 .page5-img > img{
-    width: 8vw;
+    width: 9vw;
     margin-top: 67vh;
     margin-left: 46vw;
-    display: block;
+    display: none;
     animation-timing-function: ease-in-out;
     animation-timing-function: 5s;
 }
@@ -456,26 +457,38 @@ p{
 .page5 > img{
     top: 23.5vh;
 } 
-
+*/
 
 @media only screen and (max-width:1919px) {
-a, .contact {
+    a, .contact{
+        font-size: 1rem;
+    }
+     h1{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+     .page2-caption {
+        margin-top: 0;
+        font-size: 1rem;
+     }
+       .downarrow {
+             height: 20vh;
+              width: 10vw;
+      }
+       .page3-texts{
+        width: 50%;
+      }
+      .page3-texts > h1{
+        font-size: 2.5rem;
+      }
+      .page3-texts > p{
         font-size: 1.2rem;
-    }
-    .contact{
-        width: 8vw;
-    }
-        .navbar>img {
-            margin-left: 3vw;
-            height: 7vh;
-        }
-        .para {
-            font-size: 1.3rem;
-        }
-        .improve {
-            font-size: 2.5rem;
-        }
-    p {
-        font-size: 1.3rem;
-    }
-}  */
+      }
+      @keyframes svg5ani{
+    0% {transform: scale(8vw); }
+    50% {transform: scale(9vw); }
+    100% {transform: scale(8vw); }
+}  
+}
