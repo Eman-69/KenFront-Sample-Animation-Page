@@ -54,7 +54,13 @@ function animat4()
     if(i==3)
     {
         const svg3=document.querySelectorAll("svg")[3];
-        svg3.style.animationName="svg4ani";
+        svg3.style.animationName="svg4ani1";
+        setTimeout(() => {
+            svg3.style.animationName="svg4ani2";
+            svg3.style.animationIterationCount="infinite";
+            svg3.style.animationTimingFunction="ease-in-out";
+            svg3.style.animationDuration="3s";
+        }, 1000);
         console.log("page4");
         i++;
     //toggleScroll("page2");
@@ -81,18 +87,18 @@ if(i==5)
     console.log("end of animation");
 
 
-function toggleScroll(x){
+// function toggleScroll(x){
     
-    var x=window.scrollX;
-    var y=window.scrollY;
-    const cls=document.getElementById("container");
+//     var x=window.scrollX;
+//     var y=window.scrollY;
+//     const cls=document.getElementById("container");
     
-    window.onscroll=function(){cls.scrollTo(x, y);}
-    setTimeout(() => {
+//     window.onscroll=function(){cls.scrollTo(x, y);}
+//     setTimeout(() => {
         
-    }, 3000);   
+//     }, 3000);   
     
-}
+// }
 
 
 

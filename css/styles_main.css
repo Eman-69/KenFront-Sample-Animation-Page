@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -60,6 +61,7 @@ section{
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
+    width: 100vw;
     overflow-x: hidden;
     
 }
@@ -284,11 +286,14 @@ p{
     transform: scale(1.4);
     right: 13.65vw;
     top: 15vh;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
 }
-@keyframes svg4ani{
+@keyframes svg4ani1 {
+    0% {transform: scale(5); right: 50vw; top: -150vh;}
+    100% {transform: scale(1.5); right: 13.65vw; top: 15vh;}    
+}
+@keyframes svg4ani2{
     0% {transform: scale(1.5); top: 15vh;}
     50% {transform: scale(1.4); top: 16vh;}
     100% {transform: scale(1.5); top: 15vh;}
