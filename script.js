@@ -64,7 +64,7 @@ function animat4()
             svg3.style.animationIterationCount="infinite";
             svg3.style.animationTimingFunction="ease-in-out";
             svg3.style.animationDuration="3s";
-        }, 1000);
+        }, 500);
         console.log("page4");
         i++;
     //toggleScroll("page2");

@@ -9,7 +9,11 @@ body{
         background-position: bottom, center, 0% 0%, 100% 0%;
         background-repeat: repeat-x, no-repeat, no-repeat, no-repeat;
         width: 100vw;
+        height: auto;
         overflow: hidden;
+}
+h1{
+    font-size: 1rem;
 }
 svg{
     z-index: -1;
@@ -114,18 +118,27 @@ a,.contact{
 .contact{
     background-color: rgba(0, 0, 0, 0);
     height: 4vh;
-    width: 6vw;
-    border-radius: 3vh;
+    width: 200px;
+    border-radius: 3rem;
     border-style: none;
     border: 0.2vh solid white;
 }
 .page1 
 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
     text-align: center;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    position: relative;
+}
+.page1 > div{
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+.page1-texts{
+
 }
 h1{
     font-size: 5rem;
@@ -136,7 +149,7 @@ h1{
 }
 .page1-title{
     
-    margin-top: 50vh;
+    margin-top: 55vh;
 }
 .downarrow{
     height: 25vh;
@@ -147,10 +160,9 @@ h1{
     max-height: 200vh;
 }
 .page1ellipse > svg{
-    position: absolute;
-    bottom: -28vh;
-    left: 17vw;
-    height: 120vh;
+    padding-top: 20vh;
+    height: auto;
+    width: 100%;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 3s;
@@ -175,11 +187,17 @@ background-size: 100%;
     height: 100vh;
     width: 100vw;
     background-color: green; */
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
     text-align: center;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    position: relative;
+}
+.page2 > div{
+    grid-row-start: 1;
+    grid-column-start: 1;
 }
 .page2-title{
     margin-top: 22vh;
@@ -192,11 +210,10 @@ p{
     font-size: 2.5rem;
     color: #DBDFEA;
 }
-.page2 > img{
+.page2-texts > img{
     margin-top: 2vh;
     margin-bottom: 1vh;
     height: 12vh;
-    width: 7vw;
 }
 .page2-caption {
     margin-top: 0 ;
@@ -205,39 +222,36 @@ p{
 }
 .page2ellipse
 {
-    max-height: 300vh;
+    
 }
 .page2ellipse > svg{
-    position: absolute;
-    top: -90vh;
-    left: -2vw;
-    height: 180vh;
+    margin-top: -80vh;
     animation-duration: 1s;
     animation-timing-function: ease;
 }
 @keyframes svg2ani
 {
-    0% {
-        height:100vh; top:50vh; left: 26vw;
-    }
-    100% {height:180vh; top:-90vh}
+    0% {margin-top: 0vh;}
+    100% {margin-top:-80vh;}
 }
 .page3 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
     width: 100vw;
     height: 100vh;
-    position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
+    background-image: url("../img/page3_images/graph.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size:  57% 100%;
 } 
-.graph{
-    position: absolute;
-    right: 0;
-    width: 55%;
-    height: 100%;
-    
+.page3 > div{
+    grid-row-start: 1;
+    grid-column-start: 1;
 }
-
 .page3-texts{
-    display: inline-block;
     width: 50%;
 }
 .page3-title {
@@ -251,23 +265,17 @@ p{
 }
 .page3ellipse
 {
-    max-height: 300vh;
 }
 .page3ellipse > svg{
-    position: absolute;
-    top: 34.5vh;
-    left: 80.5vw;
-    height: 20vh;
+    width: 10vw;
+    margin-left: 71.5vw;
+    margin-top: 35vh;
     animation-duration: 0.8s;
     animation-timing-function: ease-out;
 }
 @keyframes svg3ani {
-    0% {top: -90vh;
-        left: -2vw;
-        height: 180vh;}
-    100%{    top: 34.5vh;
-        left: 80.5vw;
-        height: 20vh;}
+    0% {margin-top: 0;}
+    100%{margin-top: 35vh;}
     
 }
 @keyframes imglani4
@@ -279,73 +287,98 @@ p{
     0% {height: 80vh;}
     100% {height: 100vh;}
 }
-.page4{
+.page4{ 
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
     width: 100vw;
-        height: 100vh;
-        position: relative;
-        /* overflow: hidden; */
+    height: 100vh;
+    overflow: hidden;
+}
+.page4 > div{
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+.page4ellipse{
+    width: 100vw;
+    z-index: -1;
 }
 .question{
-    position: absolute;
-    top:20vh;
-    right:15vw;
-    height: 40vh
+    width: 15vw;
+    margin-top: 20vh;
+    margin-left: 46vw;
 }
-.page4 > svg{
-    position: absolute;
-    height: 100vh;
-    transform: scale(1.4);
-    right: 13.65vw;
-    top: 15vh;
-    animation-timing-function: ease-out;
-    animation-duration: 1s;
+.page4ellipse > svg{
+    width: 50vw;
+    margin-top: -12vh;
+    margin-left: 45vw;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
 }
 @keyframes svg4ani1 {
-    0% {transform: scale(5); right: 50vw; top: -150vh;}
-    100% {transform: scale(1.5); right: 13.65vw; top: 15vh;}    
+    0% {margin-top: -200vh;}
+    100% {margin-top: -12vh;}    
 }
 @keyframes svg4ani2{
-    0% {transform: scale(1.5); top: 15vh;}
-    50% {transform: scale(1.4); top: 16vh;}
-    100% {transform: scale(1.5); top: 15vh;}
+    0% {width: 50vw; margin-top: -12vh;}
+    50% {width: 53vw; margin-top: -11vh;}
+    100% {width: 50vw; margin-top: -12vh;}
     
 }
-.page5 > svg{
-    position: absolute;
+.page5{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    width: 100vw;
     height: 100vh;
-    top:20vh;
-    left: 42vw;
-    transform: scale(1.3);
+    overflow: hidden;
+}
+.page5>div{
+    text-align: center;
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+.page5-svg{
+    margin-top: 53vh;
+    padding: 5% 0;
+
+}
+.page5-svg  > svg{
+    width: 50vw;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 3s;
 }
-.page5 > img{
-    display: none;
-    position: absolute;
-    height: 100vh;
-    top: 19.2vh;
-    left: 46.5vw;
+.page5-img{
+    
+}
+.page5-img > img{
+    width: 8vw;
+    margin-top: 67vh;
+    margin-left: 46vw;
+    display: block;
     animation-timing-function: ease-in-out;
     animation-timing-function: 5s;
 }
 @keyframes svg5ani{
-    0% {transform: scale(1.3); }
-    50% {transform: scale(1.4); }
-    100% {transform: scale(1.3); }
+    0% {transform: scale(1.7); }
+    50% {transform: scale(1.6); }
+    100% {transform: scale(1.7); }
     
 }
 @keyframes btnani {
     0% {opacity: 0%;}
     100% {opacity: 1%;}
-    
-}
+} 
+/* 
 @media only screen and (max-width:2559px){
     a,.contact{
         font-size: 1rem;
     }
     h1{
-        font-size: 2.3rem;
+        font-size: 5rem;
     }
     p{
         font-size: 1rem;
@@ -367,6 +400,7 @@ p{
       .improve{
         font-size: 2.4rem;
       }
+    }/*
     .page1ellipse > svg{
     bottom: -35vh;
     left: 21vw;
@@ -420,10 +454,10 @@ p{
 }
 .page5 > img{
     top: 23.5vh;
-}
-}
+} 
 
-/* @media only screen and (max-width:1919px) {
+
+@media only screen and (max-width:1919px) {
 a, .contact {
         font-size: 1.2rem;
     }
@@ -443,4 +477,4 @@ a, .contact {
     p {
         font-size: 1.3rem;
     }
-} */
+}  */
