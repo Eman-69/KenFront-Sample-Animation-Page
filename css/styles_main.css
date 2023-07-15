@@ -16,6 +16,7 @@ h1{
     font-size: 1rem;
 }
 svg{
+    position: relative;
     z-index: -1;
 }
 .imgr{
