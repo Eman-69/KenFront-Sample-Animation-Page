@@ -7,6 +7,10 @@ function animat1()
         x.style.animationName="imgrani1";
         x.style.height="80vh";  
         console.log("page1");
+        const svg2=document.querySelectorAll("svg")[0];
+        setTimeout(() => {
+        svg2.style.animationName="svg1ani";
+        }, 1000);
         /*const svg=document.getElementById("eI3TEKXL1DN1");
         svg.style.display="block";*/
         i++;
