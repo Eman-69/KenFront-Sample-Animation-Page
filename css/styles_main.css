@@ -144,6 +144,8 @@ nav .nav-bar .logo a{
 }
 
 .nav-links li a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
     position: relative;
     font-size: 17px;
     font-weight: 400;
@@ -701,18 +703,24 @@ p{
         display: none !important;
     }
     .page1-title{
-        margin-top: 26vh;
-        font-size: 2rem !important;
+        margin-top: 40vh;
+        font-size: 1.6rem !important;
     }
     .page1-texts{
-        padding: 4%;
+        padding: 2%;
     }
     .downarrow{
-        width:35vw;
-        height: 16vh;
+        height: 20vh;
+        object-fit: contain;
     }
     .page2-texts{
-        padding: 4%;
+        padding: 2%;
+    }
+    .page2-title{
+        margin-top: 13vh;
+    }
+    .page2-caption{
+        font-size: 0.7rem;
     }
     .page3{
         background: none;
@@ -721,11 +729,11 @@ p{
         width: auto;
         padding: 4%;
         text-align: center;
-        margin-top:4vh;
+        margin-top:0;
     }
     .page3-title{
         margin: 15vh 0vh 0vh;
-        font-size: 2rem !important;
+        font-size: 1.6rem !important;
     }
     .page3-para{
     margin-left: 0vh;
@@ -745,6 +753,10 @@ p{
         margin-left: 40vw;
         margin-bottom: 0;
     }
+            .page5-img{
+    background-position: center 50vh;
+    background-size: 35%;    
+    }
 }
 
 @media only screen and (max-height:896px) and (min-height:800px)
@@ -762,26 +774,29 @@ p{
         display: none;
     }
     h1{
-        font-size: 2.7rem;
+        font-size: 2.2rem;
     }
       .imgl,.imgr,.imgtl{
         display: none;
     }
       .page1-title{
-        margin-top: 39vh;
+        margin-top: 35vh;
     }
     .page1-texts{
         padding: 5%;
     }
         .downarrow{
-        width:35vw;
-        height: 19vh;
+            object-fit: contain;
+        height: 20vh;
     }
     p{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
         .page2-texts{
         padding: 5%;
+    }
+    .page2-caption{
+        font-size: 1rem;
     }
        .page3{
         background: none;
@@ -795,10 +810,10 @@ p{
         margin-left: 0;
     }
         .page3-para{
-    font-size: 1.6rem !important;
+    font-size: 1.2rem !important;
     }
         .page3-title{
-        font-size: 2.9rem !important;
+        font-size: 2.2rem !important;
     }
     .question{
         display: none;
@@ -813,6 +828,10 @@ p{
         width:20%;
         margin-left: 40vw;
         margin-bottom: 0;
+    }
+                .page5-img{
+    background-position: center 53vh;
+    background-size: 17%;    
     }
 }
 
@@ -840,28 +859,11 @@ p{
 }
 
 
-@media only screen and (max-width:1280px) and (min-width:1000px) 
+@media only screen and (max-width:1280px) and (min-width:950px) 
 {
-    h1{
-        font-size: 3.5rem;
-    }
-     .downarrow{
-        height: 25vh;
-        width: 21vw;
-    }
-            .page3-para{
-    font-size: 1.7rem !important;
-    }
-        .page3-title{
-        font-size: 3.5rem !important;
-    }
-    .page2 > img {
-        margin-top: 10vh;
-    }
-            .page5-img > img{
-        width:8%;
-        margin-left: 47vw;
-        margin-bottom: 0;
+                    .page5-img{
+    background-position: center 55vh;
+    background-size: 10%;    
     }
 }
 
@@ -869,11 +871,15 @@ p{
     svg{
         display: none;
     }
+   .downarrow{
+        height: 20vh;
+        object-fit: contain;
+    }
     h1{
         font-size: 1.5rem;
     }
     p{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .imgl,.imgr,.imgtl{
         display: none;
@@ -893,6 +899,9 @@ p{
     }
     .page2-caption{
         font-size: 1rem;
+    }
+    .page3-title{
+        margin-top: 15vh;
     }
     .page3{
         background: none;
@@ -924,6 +933,10 @@ p{
         width:20%;
         margin-left: 40vw;
         margin-bottom: 0;
+    }
+                    .page5-img{
+    background-position: center 55vh;
+    background-size: 25%;    
     }
 
 }
@@ -987,8 +1000,14 @@ p{
     }
 }
 
+@media only screen and (max-height:450px)
+{
+    .page2-texts,.page3-texts{
+        overflow: scroll !important;
+    }
+}
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     nav .nav-bar .sidebarOpen{
         display: block;
     }
@@ -1001,10 +1020,10 @@ p{
         width: 220px;
         right: -100%;
         top: 0;
-        padding: 20px;
         background-color: #4129F4;
         z-index: 100;
         transition: all 0.4s ease;
+        overflow: scroll !important;
     }
 
     nav.active .menu{
