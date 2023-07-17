@@ -515,6 +515,10 @@ p{
     margin-top: 65.5vh;
     margin-left: 46.75vw;
 }
+    .page5-img{
+    background-position: center 55vh;
+    background-size: 14%;    
+}
 }
 @media only screen and (max-width: 2200px) and (min-width: 1920px) {
     h1{
@@ -538,12 +542,13 @@ p{
         font-size: 1.5rem !important;
     }
           .page2ellipse > svg{
-    margin-top: -100vh;
+    margin-top: -70vh;
 }
+
     @keyframes svg2ani
 {
     0% {margin-top: 0vh;}
-    100% {margin-top:-100vh;}
+    100% {margin-top:-70vh;}
 }
        .page3-texts{
         width: 50%;
@@ -552,7 +557,7 @@ p{
         font-size: 4rem;
       }
       .page3-texts > p{
-        font-size: 2.5rem !important;
+        font-size: 2.2rem !important;
       }
       .page3ellipse > svg{
     width: 7vw;
@@ -575,7 +580,7 @@ p{
         width:4%;
         margin-left: 48vw;
         margin-bottom: 0;
-        margin-top: 9vh;
+        margin-top: 1vh;
     }
     .page5-img{
     background-position: center 50vh;
