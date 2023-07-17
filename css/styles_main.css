@@ -154,8 +154,9 @@ h1{
     margin-top: 53vh;
 }
 .downarrow{
+     margin-top: 2vh;
+    margin-bottom: 1vh;
     height: 25vh;
-    width:15vw;
 }
 .page1ellipse
 {
@@ -256,6 +257,9 @@ p{
     width: 50%;
     text-align: left;
 }
+.page3-texts > p{
+    font-size: 2.7rem;
+}
 .page3-title {
     margin-bottom: 5vh;
     margin-top: 20vh;
@@ -348,19 +352,19 @@ p{
 }
 .page5-img{
     background-image: url("../img/downloadcircle.svg");
-    background-position: center 40vh;
+    background-position: center 50vh;
     background-repeat: no-repeat;
-    background-size: 20%;    
+    background-size: 13%;    
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-name: svg5ani;
     animation-duration: 3s;
 }
 .page5-img > img{
-    width: 7vw;
+    width: 4%;
     position: relative;
-    top: 49vh;
-    margin-left: 46.5vw;
+    top: 57vh;
+    margin-left: 48vw;
     opacity: 0;
     animation-timing-function: ease-in-out;
     animation-timing-function: 5s;
@@ -468,9 +472,34 @@ p{
 }
 }
 @media only screen and (max-width: 2200px) and (min-width: 1920px) {
-    .page2-texts{
-         padding:0 10%;
+    h1{
+        font-size: 4rem;
     }
+    .downarrow{
+     margin-top: 0;
+    margin-bottom: 1vh;
+    height: 25vh;
+    }
+    .page2-texts{
+         padding:0 6%;
+    }
+    .page2-texts > h1{
+        font-size: 3.5rem;
+    }
+    .page2-texts > p{
+        font-size: 2rem;
+    }
+    .page2-caption{
+        font-size: 1.5rem !important;
+    }
+          .page2ellipse > svg{
+    margin-top: -70vh;
+}
+    @keyframes svg2ani
+{
+    0% {margin-top: 0vh;}
+    100% {margin-top:-70vh;}
+}
        .page3-texts{
         width: 50%;
       }
@@ -480,15 +509,33 @@ p{
       .page3-texts > p{
         font-size: 2rem;
       }
+      .page3ellipse > svg{
+    width: 7vw;
+    margin-left: 70.5vw;
+    margin-top: 37.5vh !important;
+}
+@keyframes svg3ani {
+    0% {margin-top: 0; transform: scale(10);}
+    100%{margin-top: 37.5vh;transform: scale(1);}
+    
+}
          .page4-title{
         margin-top: 25vh;
         font-size: 5rem !important;
     }
-      .page5-img > img{
-        width:8%;
-        margin-left: 45vw;
-        margin-bottom: 0;
+    .page5-texts > p{
+        font-size: 2rem;
     }
+      .page5-img > img{
+        width:4%;
+        margin-left: 48vw;
+        margin-bottom: 0;
+        margin-top: 9vh;
+    }
+    .page5-img{
+    background-position: center 50vh;
+    background-size: 14%;    
+}
 }
 @media only screen and (max-width: 1499px) and (min-width: 1281px)  {
     a, .contact{
@@ -588,7 +635,7 @@ p{
     }
 }
 
-@media only screen and (max-width:450px)
+@media only screen and (max-width:450px) and (min-width:361px)
 {
     .cover > img{
                 width: 50vw;
@@ -837,4 +884,63 @@ p{
         margin-bottom: 0;
     }
 
+}
+
+@media only screen and (max-width:360px) {
+    .cover > img{
+                width: 50vw;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+    svg{
+        display: none;
+    }
+    .imgr,.imgl,.imgtl{
+        display: none !important;
+    }
+    .page1-title{
+        margin-top: 60%;
+    }
+    .page1-texts{
+        padding: 2%;
+    }
+    .page2-caption{
+        font-size: 0.6rem;
+    }
+     .page2-texts{
+        padding:5%;
+    }
+    .page3{
+        background: none;
+    }
+      .page3-texts{
+       width: auto;
+        text-align: center;
+        padding: 2%;
+    }
+      .page3-para,.page3-title{
+        margin-left: 0;
+    }
+      .page3-para{
+    font-size: 0.9rem !important;
+    }
+        .page3-title{
+        font-size: 1.5rem !important;
+    }
+    .question{
+        display: none;
+    }
+        .page5-img{
+    background-position: center 55vh;
+    background-size: 35%;    
+    }
+    .page5-img > img{
+        width: 10%;
+        top: 62vh;
+        left: -3vw;
+    }
 }
