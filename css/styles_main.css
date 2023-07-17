@@ -830,7 +830,11 @@ p{
         text-align: center;
         justify-content: center;
     }
-
+    .question,.svg4{
+        width: 300px;
+        margin: auto;
+    }
+      
         .page4-title{
         margin-top: 20vh;
     }
