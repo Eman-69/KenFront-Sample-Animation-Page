@@ -93,10 +93,11 @@ nav{
     border-radius: 10vw;
     background-color: rgba(16, 16, 16, 0.802);
     height: 10%;;
-    margin: 2% 5%;
-    width: 90%;
+    margin: 2% 3%;
+    width: 94%;
     z-index: 1;
 }
+
 
 
 nav .nav-bar{
@@ -351,18 +352,25 @@ p{
     grid-column-start: 1;
 }
 .page4ellipse{
-    width: 100vw;
+    position: relative;
+    margin-left: 50vw;
+    margin-top: 20vh;
+    height: 70vh;
+    width: 50vw;
     z-index: -1;
+    display: grid;
+    grid-template-rows: 300px 400px;
+    text-align: center;
 }
 .question{
-    width: 15vw;
-    margin-top: 20vh;
-    margin-left: 46vw;
+    margin-top: 0px;
+    margin-left: 21%;
+    width: 400px;
 }
-.page4ellipse > svg{
-    width: 50vw;
-    margin-top: -11vh;
-    margin-left: 45vw;
+.svg4{
+    margin-left: 19.9%;
+    margin-top: -160px;
+    width: 400px;
     animation-name:svg4ani2 ;
     animation-timing-function: ease-in-out;
     animation-duration: 3s;
@@ -370,9 +378,9 @@ p{
 }
 
 @keyframes svg4ani2{
-    0% {width: 50vw; margin-top: -12vh;}
-    50% {width: 53vw; margin-top: -11vh;}
-    100% {width: 50vw; margin-top: -12vh;}
+    0% {margin-top: -160px;}
+    50% {margin-top: -140px;}
+    100% {margin-top: -160px;}
     
 }
 @keyframes imglanizoom {
@@ -480,15 +488,7 @@ p{
         margin-top: 25vh;
         font-size: 6rem !important;
     }
-.question{
-    width: 16vw;
-    margin-top: 23vh;
-}
-.page4ellipse > svg{
-    width: 50vw;
-    margin-top: -23vh;
-    margin-left: 45vw;
-}
+
 @keyframes svg4ani1 {
     0% {margin-top: -200vh;transform: scale(3);}
     100% {margin-top: -23vh;transform: scale(1);}    
@@ -625,23 +625,11 @@ p{
     100%{margin-top: 36.5vh;transform: scale(1);}
     
 }
-.question{
-    width: 16vw;
-    margin-top: 23vh;
-}
-.page4ellipse > svg{
-    width: 30vw;
-    margin-top: -40vh;
-    margin-left: 45vw;
-}
+
 @keyframes svg4ani1 {
     0% {margin-top: -200vh;transform: scale(3);}
     100% {margin-top: -40vh;transform: scale(1);}    
 }
-@keyframes svg4ani2{
-    0% {width: 30vw; margin-top: -40vh;}
-    50% {width: 33vw; margin-top: -39vh;}
-    100% {width: 30vw; margin-top: -40vh;}
     
 }
 .page5-svg  > svg{
@@ -739,9 +727,25 @@ p{
     margin-left: 0vh;
     font-size: 1.1rem !important;
     }
-    .question{
-        display: none;
+
+    .page4ellipse{
+        position: relative;
+        margin:auto;
+        height: 60vh;
+        width: 90vw;
+        z-index: -1;
+        display: grid;
+        grid-template-rows: 300px 400px;
+        text-align: center;
+        justify-content: center;
     }
+   .question,.svg4{
+        width: 200px;
+        margin: auto;
+   }
+   .question{
+    margin-top: 80px;
+   }
     .page4-title{
         margin-top: 17vh;
     }
@@ -815,9 +819,18 @@ p{
         .page3-title{
         font-size: 2.2rem !important;
     }
-    .question{
-        display: none;
+    .page4ellipse{
+        position: relative;
+        margin:auto;
+        height: 60vh;
+        width: 100vw;
+        z-index: -1;
+        display: grid;
+        grid-template-rows: 300px 400px;
+        text-align: center;
+        justify-content: center;
     }
+
         .page4-title{
         margin-top: 20vh;
     }
@@ -920,9 +933,21 @@ p{
         .page3-title{
         font-size: 2.2rem !important;
     }
-    .question{
-        display: none;
+    .page4ellipse{
+        position: relative;
+        margin:auto;
+        height: 60vh;
+        width: 90vw;
+        z-index: -1;
+        display: grid;
+        grid-template-rows: 300px 400px;
+        text-align: center;
+        justify-content: center;
     }
+   .question,.svg4{
+        margin: auto;
+        width: 200px;
+   }
             .page4-title{
         margin-top: 23vh;
     }
@@ -986,10 +1011,23 @@ p{
         .page3-title{
         font-size: 1.5rem !important;
     }
-    .question{
-        display: none;
+    .page4ellipse{
+        position: relative;
+        margin:auto;
+        height: 60vh;
+        width: 90vw;
+        z-index: -1;
+        display: grid;
+        grid-template-rows: 300px 400px;
+        text-align: center;
+        justify-content: center;
     }
-        .page5-img{
+   .question,.svg4{
+        width: 200px;
+   }
+   .question{
+    margin-top: 50px;
+   } .page5-img{
     background-position: center 55vh;
     background-size: 35%;    
     }
