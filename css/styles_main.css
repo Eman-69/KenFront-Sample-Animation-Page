@@ -461,13 +461,19 @@ p{
               width: 10vw;
       }
       p{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+      }
+      .page2-caption{
+        font-size: 2rem;
       }
       .page2ellipse > svg{
     margin-top: -90vh;
 }
     .page2-texts{
         padding:0 10%;
+    }
+    .page3-texts > p{
+        font-size: 2.2rem;
     }
 @keyframes svg2ani
 {
@@ -493,12 +499,7 @@ p{
     0% {margin-top: -200vh;transform: scale(3);}
     100% {margin-top: -23vh;transform: scale(1);}    
 }
-@keyframes svg4ani2{
-    0% {width: 50vw; margin-top: -24vh;}
-    50% {width: 53vw; margin-top: -23vh;}
-    100% {width: 50vw; margin-top: -24vh;}
-    
-}
+
 .page5-svg  > svg{
     width: 30vw;
     margin-top: 42vh;
@@ -537,12 +538,12 @@ p{
         font-size: 1.5rem !important;
     }
           .page2ellipse > svg{
-    margin-top: -70vh;
+    margin-top: -100vh;
 }
     @keyframes svg2ani
 {
     0% {margin-top: 0vh;}
-    100% {margin-top:-70vh;}
+    100% {margin-top:-100vh;}
 }
        .page3-texts{
         width: 50%;
@@ -551,7 +552,7 @@ p{
         font-size: 4rem;
       }
       .page3-texts > p{
-        font-size: 2rem;
+        font-size: 2.5rem !important;
       }
       .page3ellipse > svg{
     width: 7vw;
@@ -586,10 +587,10 @@ p{
         font-size: 1rem;
     }
      h1{
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     p{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
     .page2-texts{
         padding:0 10%;
@@ -600,7 +601,6 @@ p{
      }
        .downarrow {
              height: 20vh;
-              width: 15vw;
       }
        .page3-texts{
         width: 50%;
@@ -609,7 +609,7 @@ p{
         font-size: 3.2rem;
       }
       .page3-texts > p{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
       }
          .page4-title{
         margin-top: 25vh;
@@ -664,6 +664,9 @@ p{
             .page4-title{
         margin-top: 25vh;
         font-size: 4rem !important;
+    }
+    .downarrow{
+        height:20vh;
     }
 }
 
